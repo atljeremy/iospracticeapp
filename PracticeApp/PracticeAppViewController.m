@@ -14,7 +14,7 @@
 @end
 
 @implementation PracticeAppViewController
-@synthesize textView, label, dataKeys, dataValues, theConnection, parser, adapter, posts, myTableView, notificationView;
+@synthesize textView, label, dataKeys, dataValues, theConnection, parser, adapter, posts, myTableView, notificationView, ispeech;
 
 - (void)didReceiveMemoryWarning
 {
@@ -45,9 +45,12 @@
     
     //Setup Discreet Notifications
     notificationView = [[GCDiscreetNotificationView alloc] initWithText: @"This Is My Notification"
-                                                           showActivity: NO
+                                                           showActivity: YES
                                                      inPresentationMode: GCDiscreetNotificationViewPresentationModeTop 
                                                                  inView:self.view];
+    
+    //Setup iSpeech
+    ispeech = [ISpeechSDK ISpeech:@"327b1f95c61a4f64a561836677322fa6" provider:@"me.jeremyfox.testapp" application:@"iOS Test App" useProduction:YES];
 }
 
 - (void)viewDidUnload
@@ -209,30 +212,21 @@
 
 
 
-/****************************************************************
- SBJson example
-****************************************************************/
-- (IBAction)logJson:(id)sender {
+#pragma mark SBJson Custom getJson method
 
-    // We don't want *all* the individual messages from the
-    // SBJsonStreamParser, just the top-level objects. The stream
-    // parser adapter exists for this purpose.
-    adapter = [[SBJsonStreamParserAdapter alloc] init];
+/****************************************************************
+ SBJson Framework Example
+****************************************************************/
+- (IBAction)getJson:(id)sender {
     
-    // Set ourselves as the delegate, so we receive the messages
-    // from the adapter.
+    [self setNotificationLabel:@"Fetching Json" withActivityIndicator:YES andAnimation:YES];
+    [self showNotification];
+    
+    adapter = [[SBJsonStreamParserAdapter alloc] init];
     adapter.delegate = self;
     
-    // Create a new stream parser..
     parser = [[SBJsonStreamParser alloc] init];
-    
-    // .. and set our adapter as its delegate.
     parser.delegate = adapter;
-    
-    // Normally it's an error if JSON is followed by anything but
-    // whitespace. Setting this means that the parser will be
-    // expecting the stream to contain multiple whitespace-separated
-    // JSON documents.
     parser.supportMultipleDocuments = YES;
     
     NSString *url = @"http://www.atlmetal.com/apps/live_stream.php?username=ATLmetal&format=json";
@@ -266,26 +260,11 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 	NSLog(@"Connection didReceiveAuthenticationChallenge: %@", challenge);
-
-//*******************************************************************************
-// I left this here to refer to for authentication
-//
-//	NSURLCredential *credential = [NSURLCredential 
-//                                   credentialWithUser:username.text
-//                                   password:password.text
-//                                   persistence:NSURLCredentialPersistenceForSession];
-//	
-//	[[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
-//*******************************************************************************
-
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
 	NSLog(@"Connection didReceiveData of length: %u", data.length);
 	
-	// Parse the new chunk of data. The parser will append it to
-	// its internal buffer, then parse from where it left off in
-	// the last chunk.
 	SBJsonStreamParserStatus status = [parser parse:data];
 	
 	if (status == SBJsonStreamParserError) {
@@ -305,10 +284,11 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSString *stringMessage = @"Connection Did Finish Loading!";
-    [self showErrorDialogWithTitle:@"Finished!" andMessage:stringMessage];
     
     //Fire the "downloadCompleted" notification to the listener in the viewDidLoad method.
     [[NSNotificationCenter defaultCenter] postNotificationName:@"downloadCompleted" object:nil];
+    
+    [self hideNotification];
 }
 
 
@@ -318,9 +298,31 @@
  Show/Hide Discreet Notification
 ****************************************************************/
 - (IBAction) showHideNotification:(id)sender  {
+    [self setNotificationLabel:@"YO! This is a Discreet Notification" withActivityIndicator:YES andAnimation:YES];
     [self.notificationView showAndDismissAfter:2.0];
 }
 
+- (void) showNotification  {
+    [self.notificationView showAnimated];
+}
+
+- (void) hideNotification  {
+    [self.notificationView hideAnimatedAfter:0.5];
+}
+
+- (void) setNotificationLabel:(NSString *)text withActivityIndicator:(BOOL)activity andAnimation:(BOOL)animated {
+    [self.notificationView setTextLabel:text andSetShowActivity:activity animated:animated];
+}
+
+
+
+
+/****************************************************************
+ Example method for iSpeech
+****************************************************************/
+- (IBAction)speak:(id)sender {
+    [ispeech ISpeechSpeak:@"Hello Isabella, Scarlett and Courtney! I'm iSpeech and I love to talk!"];
+}
 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ISpeechSDK.h"
 
 @class SBJsonStreamParser;
 @class SBJsonStreamParserAdapter;
@@ -16,25 +17,27 @@
 
 @property (nonatomic, strong) NSDictionary *dataValues;
 @property (nonatomic, strong) NSArray *dataKeys;
-
 @property (nonatomic, strong) NSArray *posts;
-
-@property (weak, nonatomic) IBOutlet UITextField *textView;
-@property (weak, nonatomic) IBOutlet UILabel *label;
-
-@property (strong, nonatomic) NSURLConnection *theConnection;
-@property (strong, nonatomic) SBJsonStreamParser *parser;
-@property (strong, nonatomic) SBJsonStreamParserAdapter *adapter;
+@property (nonatomic, strong) NSURLConnection *theConnection;
+@property (nonatomic, strong) SBJsonStreamParser *parser;
+@property (nonatomic, strong) SBJsonStreamParserAdapter *adapter;
 @property (nonatomic, retain) GCDiscreetNotificationView *notificationView;
+@property (nonatomic, retain) ISpeechSDK *ispeech;
 
-@property (weak, nonatomic) IBOutlet UITableView *myTableView;
+@property (nonatomic, weak) IBOutlet UITextField *textView;
+@property (nonatomic, weak) IBOutlet UILabel *label;
+@property (nonatomic, weak) IBOutlet UITableView *myTableView;
 
 - (IBAction)submit:(id)sender;
 - (IBAction)hideKeyboard:(id)sender;
 - (IBAction)showAlert:(id)sender;
-- (IBAction)logJson:(id)sender;
+- (IBAction)getJson:(id)sender;
 - (IBAction)showHideNotification:(id)sender;
+- (IBAction)speak:(id)sender;
 
-- (void)showErrorDialogWithTitle:(NSString *)title andMessage:(NSString *)message;
+- (void) showErrorDialogWithTitle:(NSString *)title andMessage:(NSString *)message;
+- (void) setNotificationLabel:(NSString *)text withActivityIndicator:(BOOL)activity andAnimation:(BOOL)animated;
+- (void) showNotification;
+- (void) hideNotification;
 
 @end
