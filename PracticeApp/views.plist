@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iSpeech</key>
+	<string>IspeechViewController</string>
+	<key>SBJson</key>
+	<string>JsonViewController</string>
+	<key>Dicreet Notifications</key>
+	<string>DiscreetNotificationsViewController</string>
+	<key>Updating Text Label</key>
+	<string>UpdatingTextLabelViewController</string>
+</dict>
+</plist>

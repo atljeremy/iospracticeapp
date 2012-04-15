@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PracticeApp copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>PracticeApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3F90F87B153B2E4C00B47D43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F90F8B9153B2F7F00B47D43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F90F8C8153B312300B47D43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3F953741152FD5F7006FB15E</key>
 		<dict>
 			<key>primary</key>

@@ -1,0 +1,229 @@
+ [{
+  posts: [
+          {
+          logged: true,
+          post: {
+          id: "307",
+          status: "Immortals was bad ass!! If you get the chance, go see it!",
+          date: "2011-11-11",
+          time: "21:38:46"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "306",
+          status: "Spending the day with the family. : )",
+          date: "2011-10-29",
+          time: "12:59:28"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "305",
+          status: "Just ha our first mobile Dev group meeting!",
+          date: "2011-10-11",
+          time: "20:25:37"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "303",
+          status: "Cowboys and aliens kicks ass!",
+          date: "2011-09-17",
+          time: "15:40:15"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "300",
+          status: "Wow, I just had a damn scorpion crawl all the way up my leg inside my jeans while I was sitting on the couch!!!!! AAAHHHH!!!!!",
+          date: "2011-09-03",
+          time: "02:07:28"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "291",
+          status: "Well, traffic on my way to work was not nearly as bad as I expected it to be! So needless to say, I'm here early, 20 minutes early! But, I guess it is better to be extra early rather than late on your first day! Wish me luck! Thanks.",
+          date: "2011-09-01",
+          time: "06:47:16"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "287",
+          status: "Just wanted to say THANK YOU to my awesome wife for taking care of our 1 month old baby last night so I could get a little sleep before going to work at 6am! Scarlett was up every 20 minutes last night but Courtney was determined to take care of her so I could sleep. You are the best wife a man could ask for and I love you!",
+          date: "2011-08-29",
+          time: "07:56:49"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "284",
+          status: "Only one more day left at Sam's club! I'm excited about starting my new career as a mobile application developer!",
+          date: "2011-08-28",
+          time: "14:35:20"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "278",
+          status: "Got me a new job! Can't wait to get started!",
+          date: "2011-08-19",
+          time: "14:24:09"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "276",
+          status: "Today is the day! We are at the hospital, eagerly awaiting a room. We will soon meet the newest addition to the Fox den, Scarlett Rose Fox!",
+          date: "2011-07-27",
+          time: "07:51:12"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "275",
+          status: "Only 7 more days until I get to hold my little Scarlett! I am dying with anticipation! Also, My mom will be here on the 26th! To much excitement for one man to handle!",
+          date: "2011-07-20",
+          time: "18:17:28"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "271",
+          status: "At work : ( Will soon be off so I can go home and see my beautiful wife and daughter : )",
+          date: "2011-06-21",
+          time: "12:36:19"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "270",
+          status: "uploaded a new video titled "<a href="http://www.atlmetal.com/mediaplayer/player.php?user=ATLmetal&id=133">Interview with Job for a Cowboy</a>".",
+          date: "2011-05-22",
+          time: "09:34:34"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "269",
+          status: "uploaded a new video titled "<a href="http://www.atlmetal.com/mediaplayer/player.php?user=ATLmetal&id=132">Becoming The Archetype Interview - 3/28/2011 - By ATLmetal.com</a>".",
+          date: "2011-05-07",
+          time: "13:38:18"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "268",
+          status: "uploaded a new video titled "<a href="http://www.atlmetal.com/mediaplayer/player.php?user=ATLmetal&id=131">Becoming The Archetype Interview - 3/28/2011 - By ATLmetal.com</a>".",
+          date: "2011-05-07",
+          time: "13:18:49"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "267",
+          status: "uploaded a new video titled "<a href="http://www.atlmetal.com/mediaplayer/player.php?user=ATLmetal&id=130">Test</a>".",
+          date: "2011-05-06",
+          time: "23:11:27"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "266",
+          status: "Whats up peoples?! If you have not yet seen... we have updated the sites design! Check it out www.atlmetal.com",
+          date: "2011-05-01",
+          time: "20:57:35"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "264",
+          status: "OH MY GOD!!!! I just won the GA state lottery worth $320 million!!!!!! AAAAAAAAHHHHHHHHH!!!! lol... J/k... I can dream right? : )",
+          date: "2011-03-24",
+          time: "17:37:54"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "256",
+          status: "We are so excited to be having another beautiful little girl! I can not wait to see her for the first time and hold little Scarlett Rose in my arms! ",
+          date: "2011-03-23",
+          time: "17:02:23"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "253",
+          status: "Today my wife and I find out what we will be having. Excited!",
+          date: "2011-03-23",
+          time: "09:53:51"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "252",
+          status: "I'm off the next 2 days. Fuck yes!!!",
+          date: "2011-03-21",
+          time: "20:59:49"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "236",
+          status: "This app is going to be sick!",
+          date: "2011-03-11",
+          time: "22:11:39"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "235",
+          status: "Man I love this shit!",
+          date: "2011-03-11",
+          time: "22:10:30"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "233",
+          status: "uploaded a new video titled "<a href="http://www.atlmetal.com/mediaplayer/player.php?user=ATLmetal&id=129">Before There Was Rosalyn Video In",
+          date: "2011-03-07",
+          time: "09:37:42"
+          }
+          },
+          {
+          logged: true,
+          post: {
+          id: "212",
+          status: "uploaded a new video titled "<a href="http://www.atlmetal.com/mediaplayer/player.php?user=ATLmetal&id=123">Interview with Alexis Brown of St",
+          date: "2011-02-03",
+          time: "19:41:54"
+          }
+          }
+          ]
+  }]

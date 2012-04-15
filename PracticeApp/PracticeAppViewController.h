@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ISpeechSDK.h"
 
-@class SBJsonStreamParser;
-@class SBJsonStreamParserAdapter;
+//@class SBJsonStreamParser;
+//@class SBJsonStreamParserAdapter;
 @class GCDiscreetNotificationView;
 
 @interface PracticeAppViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -19,8 +19,8 @@
 @property (nonatomic, strong) NSArray *dataKeys;
 @property (nonatomic, strong) NSArray *posts;
 @property (nonatomic, strong) NSURLConnection *theConnection;
-@property (nonatomic, strong) SBJsonStreamParser *parser;
-@property (nonatomic, strong) SBJsonStreamParserAdapter *adapter;
+//@property (nonatomic, strong) SBJsonStreamParser *parser;
+//@property (nonatomic, strong) SBJsonStreamParserAdapter *adapter;
 @property (nonatomic, retain) GCDiscreetNotificationView *notificationView;
 @property (nonatomic, retain) ISpeechSDK *ispeech;
 
